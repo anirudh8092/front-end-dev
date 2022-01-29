@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale =1.0">
+        <meta http-equiv="X-UA-Compatable" content="ie=edge">
+        <title>Forms and input creation</title>
+    </head>
+    <body>
+       <form action="process.php">
+           <div>
+               <label for="name">name</label>
+               <input type="text" id='name' name="name" placeholder="enter the name">
+           </div>
+           <br>
+           <div>
+               <label for="email">email</label>
+               <input type="email" name="email" id="email" placeholder="enter an email">
+           </div>
+           <br>
+           <div>
+               <label for="message">Message</label>
+               <textarea name="message" id="message" cols = "12" rows ="10"></textarea>
+           </div>
+           <br>
+           <div>
+               <select name="gender" id="gender">gender/select>
+                <option value="make">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+           </div>
+           <br>
+           <div>
+               <label for="age">age</label>
+               <input type="number" name="age"id="age">
+           </div>
+           <br>
+           <div>
+               <label for="birthdate">DOB</label><br>
+               <input type="date" name="birthdate" id="birthdate">
+           </div>
+           <br>
+           <div>
+               <label for="membership">membership</label>
+               <input type="radio" name="membership" value="normal" id="membership" checked> simple <!--checked makes it default-->
+               <input type="radio" name="membership" value="luxuary" id="membership"> standered
+               <input type="radio" name="membership" value="premium" id="membership"> super
+           </div>
+           <br>
+           <div>
+            <label for="likes">likes</label>
+            <input type="checkbox" name="likes" value="bikes" id="likes" > cars <!--checked makes it default-->
+            <input type="checkbox" name="likes" value="cars" id="likes"> bikes
+            <input type="checkbox" name="likes" value="others" id="likes"> others
+           </div>
+           <br>
+           <div>
+               <button type="submit">submit</button>
+           </div>
+           <br>
+           <div>
+               <button type="reset">Reset</button>
+           </div>
+       </form>
+    </body>
+</html>

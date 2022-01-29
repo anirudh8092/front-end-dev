@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatable" content="ie=edge">
+        <title>css selectors</title>
+        <style>
+            h2#green-heading{
+                color: green;
+            }
+            .Welcome{ 
+               background-color: beige; 
+            }
+            /* multiple selectors*/
+            #welcome, #about{
+                border: beige;
+                padding: 10px;
+                margin-bottom: 5px;
+            }
+            #welcome p{
+                font-size: 20px;
+            }
+            /*body styling for the whole website*/
+            body{
+                background-color: aqua;
+            }
+            #about{
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Welcome">
+            <h2 class="green-heading">Welcome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nobis quod enim consequuntur ducimus, assumenda cum reprehenderit. Error voluptatum magni </p>
+            <div id="About">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nobis a, accusamus blanditiis explicabo, corporis iusto, inventore deserunt dolores ab delectus? Ab quam sed conse</p>
+            </div>
+        </div>
+    </body>
+</html>
